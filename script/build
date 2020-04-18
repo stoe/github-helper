@@ -4,6 +4,6 @@
 [[ ! -d ./build ]] && mkdir build/
 
 crx pack dist --crx-version number 2 -p key.pem --zip-output build/github-repo-status.zip
-crx pack dist --crx-version number 2 -p key.pem -o build/github-repo-status.crx
+# crx pack dist --crx-version number 2 -p key.pem -o build/github-repo-status.crx
 
 [[ -d ./dist ]] && rm -rf dist/

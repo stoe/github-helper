@@ -38,12 +38,12 @@ jobs:
           asset_path: ./build/github-repo-status.zip
           asset_name: github-repo-status.zip
           asset_content_type: application/zip
-      - uses: actions/upload-release-asset@v1
-        id: upload-release-asset-crx
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/github-repo-status.crx
-          asset_name: github-repo-status.crx
-          asset_content_type: application/application/x-chrome-extension
+      # - uses: actions/upload-release-asset@v1
+      #   id: upload-release-asset-crx
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     upload_url: ${{ steps.create_release.outputs.upload_url }}
+      #     asset_path: ./build/github-repo-status.crx
+      #     asset_name: github-repo-status.crx
+      #     asset_content_type: application/application/x-chrome-extension
