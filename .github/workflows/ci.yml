@@ -4,10 +4,10 @@ on:
   pull_request:
     branches: [master]
 
-name: build
+name: ci
 
 jobs:
-  build:
+  ci:
     runs-on: ubuntu-latest
 
     strategy:
