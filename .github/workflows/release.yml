@@ -30,7 +30,7 @@ jobs:
           draft: contains(github.ref, 'alpha')
           prerelease: contains(github.ref, 'beta')
       - uses: actions/upload-release-asset@v1
-        id: upload-release-asset
+        id: upload-release-asset-zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -39,7 +39,7 @@ jobs:
           asset_name: github-repo-status.zip
           asset_content_type: application/zip
       - uses: actions/upload-release-asset@v1
-        id: upload-release-asset
+        id: upload-release-asset-crx
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
