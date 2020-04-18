@@ -28,7 +28,7 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           draft: false
-          prerelease: contains(github.ref, 'alpha') || contains(github.ref, 'beta')
+          prerelease: ${{ contains(github.ref, 'alpha') || contains(github.ref, 'beta') }}
       - uses: actions/upload-release-asset@v1
         id: upload-release-asset-zip
         env:
