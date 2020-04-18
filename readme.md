@@ -4,6 +4,12 @@
 
 > A Microsoft Edge extension to shows an at-a-glance overview of GitHub repositories activity status.
 
+## Install
+
+- Download the latest zip file from [Release](https://github.com/stoe/github-repo-status-ms-edge/releases)
+- Unzip the zip file to your disk
+- Follow instructions to [install a side-loaded extension](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension#installing-and-updating-side-loaded-extensions). You will need to enable [Developer mode](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension#run-your-extension-locally-in-your-browser-while-developing-it-side-loading).
+
 ## License
 
 - [MIT](./license) © [Stefan Stölzle](https://github.com/stoe)
