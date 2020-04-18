@@ -1,0 +1,10 @@
+{
+  "extends": ["plugin:github/es6", "plugin:github/node"],
+  "globals": {
+    "chrome": "readonly",
+    "document": "readonly",
+    "MutationObserver": "writable"
+  },
+  "ignorePatterns": ["build/", "dist/"],
+  "rules": {"eslint-comments/no-use": ["error", {"allow": []}]}
+}

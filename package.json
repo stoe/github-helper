@@ -1,0 +1,30 @@
+{
+  "name": "github-repo-status-ms-edge",
+  "description": "Shows an at-a-glance overview of GitHub repositories activity status.",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Stefan Stölzle",
+    "email": "stoe@github.com",
+    "url": "https://github.com/stoe"
+  },
+  "repository": "stoe/github-repo-status-ms-edge",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn test",
+    "build": "webpack-cli --config webpack.config.js",
+    "test": "github-lint"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "archiver": "^4.0.1",
+    "copy-webpack-plugin": "^5.1.1",
+    "crx": "^5.0.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-github": "^3.4.1",
+    "remove-files-webpack-plugin": "^1.4.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
