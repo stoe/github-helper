@@ -16,7 +16,13 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 13.x
-      - run: yarn install
+      - uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: node_modules
+          key: 12.x-yarn-${{ hashFiles('**/yarn.lock') }}
+      - run: yarn install --ignore-scripts --pure-lockfile
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
       - run: yarn build
         env:
           CI: true

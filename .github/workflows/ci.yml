@@ -21,7 +21,13 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install
+      - uses: actions/cache@v1
+        id: yarn-cache
+        with:
+          path: node_modules
+          key: ${{ matrix.node-version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+      - run: yarn install --ignore-scripts --pure-lockfile
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
       - run: yarn test
         env:
           CI: true
