@@ -1,6 +1,6 @@
 {
   "name": "github-repo-status-ms-edge",
-  "description": "Shows an at-a-glance overview of GitHub repositories activity status.",
+  "description": "A Microsoft Edge (Chromium) extension to show an at-a-glance overview of GitHub repositories activity status.",
   "version": "1.0.0",
   "private": true,
   "author": {
