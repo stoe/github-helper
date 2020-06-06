@@ -25,21 +25,25 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Get npm cache directory
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+
       - name: Cache node modules
         uses: actions/cache@v2
-        id: npm-cache
         with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
-          path: ~/.npm
+          path: ${{ steps.npm-cache.outputs.dir }}
           key: npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: npm-
 
       - name: Install Dependencies
         run: npm install --ignore-scripts --pure-lockfile
-        if: steps.npm-cache.outputs.cache-hit != 'true'
 
       - name: Build
         run: npm run build
+        env:
+          CI: true
 
       - name: Test
         run: npm test
