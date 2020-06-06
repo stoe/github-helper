@@ -1,29 +1,35 @@
 {
-  "name": "github-repo-status-ms-edge",
-  "description": "A Microsoft Edge (Chromium) extension to show an at-a-glance overview of GitHub repositories activity status.",
-  "version": "1.0.0",
-  "private": true,
+  "name": "github-helper",
+  "description": "A browser extension to do things on github.com",
+  "version": "2.0.0",
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
     "url": "https://github.com/stoe"
   },
-  "repository": "stoe/github-repo-status-ms-edge",
+  "repository": "stoe/github-helper",
   "license": "MIT",
   "scripts": {
-    "build": "webpack-cli --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "pretest": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "test": "eslint ."
   },
-  "dependencies": {},
+  "dependencies": {
+    "@octokit/request": "^5.4.4"
+  },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
     "archiver": "^4.0.1",
     "copy-webpack-plugin": "^6.0.2",
     "crx": "^5.0.1",
-    "eslint": "^7.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-github": "^4.0.1",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
     "remove-files-webpack-plugin": "^1.4.2",
+    "sass": "^1.26.8",
+    "sass-loader": "^8.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-shell-plugin": "^0.5.0"

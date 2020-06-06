@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+        padding: 10px;
+        font-size: large;
+        font-family: "system-ui", sans-serif;
+      }
+
+      #status {
+        height: 1.5em;
+        margin-bottom: 0.5em;
+      }
+  </style>
+</head>
+<body>
+
+  <p>
+    You'll need to <a href="https://github.com/settings/tokens/new?description=github-helper-browser-extension&scopes=read:org" target="_blank">create a
+    person access token</a><br /> with the <code>read:org</code> scope.
+  </p>
+
+  <div id="status"></div>
+
+  <label>
+    Personal Access Token:
+    <input type="password" id="token">
+  </label>
+
+  <button id="save">Save</button>
+
+  <script src="./options.js"></script>
+
+</body>
+</html>

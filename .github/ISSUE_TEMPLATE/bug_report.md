@@ -27,6 +27,7 @@ A clear and concise description of what you expected to happen.
 
 > (please complete the following information)
 
+- Browser & version [e.g. Firefox, MS Edge, Safari] [e.g. 83.0.478.37 (Official build) Beta (64-bit)]
 - Node version [e.g. 12.16.1]
 - npm version [e.g. 6.13.4]
 - yarn version [e.g. 1.22.4]
