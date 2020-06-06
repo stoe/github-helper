@@ -7,14 +7,44 @@ const sh = require('webpack-shell-plugin')
 
 module.exports = {
   mode: 'production',
+  target: 'web',
   entry: {
     background: './src/background.js',
-    content: './src/content.js',
-    options: './src/options.js'
+    options: ['./src/options.js', './src/html/options.html'],
+    content: ['./src/highlighter.js', './src/repo-status.js', './src/css/style.scss']
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.html$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].html'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'content.css'
+            }
+          },
+          {
+            loader: 'sass-loader'
+          }
+        ]
+      }
+    ]
   },
   plugins: [
     new webpack.ProgressPlugin(),
@@ -27,13 +57,6 @@ module.exports = {
       patterns: [
         {from: './src/manifest.json'},
         {from: './license'},
-        {
-          from: './src/html',
-          to: 'html/',
-          globOptions: {
-            ignore: ['**/.DS_Store']
-          }
-        },
         {
           from: './src/icons',
           to: 'icons/',

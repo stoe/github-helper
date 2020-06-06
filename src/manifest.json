@@ -18,8 +18,9 @@
 
   "content_scripts": [
     {
-      "matches": ["https://*.github.com/*"],
+      "matches": ["*://*.github.com/*"],
       "js": ["content.js"],
+      "css": ["content.css"],
       "run_at": "document_idle"
     }
   ],
@@ -31,8 +32,8 @@
   },
 
   "options_ui": {
-    "page": "html/options.html"
+    "page": "options.html"
   },
 
-  "permissions": ["https://*.github.com/*", "storage"]
+  "permissions": ["*://*.github.com/*", "storage"]
 }

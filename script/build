@@ -5,5 +5,3 @@
 
 crx pack dist --crx-version number 2 -p key.pem --zip-output build/github-helper.zip
 # crx pack dist --crx-version number 2 -p key.pem -o build/github-helper.crx
-
-# [[ -d ./dist ]] && rm -rf dist/
