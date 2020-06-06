@@ -1,14 +1,14 @@
 {
-  "name": "github-repo-status-ms-edge",
-  "description": "A Microsoft Edge (Chromium) extension to show an at-a-glance overview of GitHub repositories activity status.",
-  "version": "1.0.0",
+  "name": "github-helper",
+  "description": "A browser extension to do things on github.com",
+  "version": "2.0.0",
   "private": true,
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
     "url": "https://github.com/stoe"
   },
-  "repository": "stoe/github-repo-status-ms-edge",
+  "repository": "stoe/github-helper",
   "license": "MIT",
   "scripts": {
     "build": "webpack-cli --config webpack.config.js",

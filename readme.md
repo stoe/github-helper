@@ -1,12 +1,12 @@
-# github-repo-status-ms-edge
+# github-helper
 
-[![ci](https://github.com/stoe/github-repo-status-ms-edge/workflows/ci/badge.svg)](https://github.com/stoe/github-repo-status-ms-edge/actions?query=workflow%3Aci) [![release](https://github.com/stoe/github-repo-status-ms-edge/workflows/release/badge.svg)](https://github.com/stoe/github-repo-status-ms-edge/actions?query=workflow%3Arelease) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![ci](https://github.com/stoe/github-helper/workflows/ci/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Aci) [![release](https://github.com/stoe/github-helper/workflows/release/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Arelease) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > A Microsoft Edge (Chromium) extension to show an at-a-glance overview of GitHub repositories activity status.
 
 ## Install
 
-- Download the latest zip file from [Release](https://github.com/stoe/github-repo-status-ms-edge/releases)
+- Download the latest zip file from [Release](https://github.com/stoe/github-helper/releases)
 - Unzip the zip file to your disk
 - Follow instructions to [install a side-loaded extension](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension#installing-and-updating-side-loaded-extensions). You will need to enable [Developer mode](https://docs.microsoft.com/en-us/microsoft-edge/extensions-chromium/getting-started/part1-simple-extension#run-your-extension-locally-in-your-browser-while-developing-it-side-loading).
 
