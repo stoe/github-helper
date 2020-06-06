@@ -1,10 +1,16 @@
 {
-  "extends": ["plugin:github/es6", "plugin:github/node"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["github"],
+  "extends": ["plugin:github/recommended"],
   "globals": {
     "chrome": "readonly",
     "document": "readonly",
     "MutationObserver": "writable"
-  },
-  "ignorePatterns": ["build/", "dist/"],
-  "rules": {"eslint-comments/no-use": ["error", {"allow": []}]}
+  }
 }

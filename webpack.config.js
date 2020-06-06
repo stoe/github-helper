@@ -10,28 +10,41 @@ module.exports = {
   entry: {
     background: './src/background.js',
     content: './src/content.js',
+    options: './src/options.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name].js'
   },
   plugins: [
     new webpack.ProgressPlugin(),
     new rm({
       before: {
-        include: ['./build'],
-      },
+        include: ['./build', './dist']
+      }
     }),
-    new cp(
-      [
-        {from: './src/manifest.json', cache: true},
-        {from: './license', cache: true},
-        {from: './src/icons', to: 'icons/', cache: true},
-      ],
-      {logLevel: 'silent', ignore: ['**/.DS_Store']},
-    ),
+    new cp({
+      patterns: [
+        {from: './src/manifest.json'},
+        {from: './license'},
+        {
+          from: './src/html',
+          to: 'html/',
+          globOptions: {
+            ignore: ['**/.DS_Store']
+          }
+        },
+        {
+          from: './src/icons',
+          to: 'icons/',
+          globOptions: {
+            ignore: ['**/.DS_Store']
+          }
+        }
+      ]
+    }),
     new sh({
-      onBuildEnd: ['script/build'],
-    }),
-  ],
+      onBuildEnd: ['script/build']
+    })
+  ]
 }
