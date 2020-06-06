@@ -10,7 +10,7 @@
   "repository": "stoe/github-helper",
   "license": "MIT",
   "scripts": {
-    "build": "webpack-cli --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
     "pretest": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "test": "eslint ."
   },
@@ -22,7 +22,7 @@
     "archiver": "^4.0.1",
     "copy-webpack-plugin": "^6.0.2",
     "crx": "^5.0.1",
-    "eslint": "^7.1.0",
+    "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-github": "^4.0.1",
     "file-loader": "^6.0.0",
