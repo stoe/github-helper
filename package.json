@@ -2,7 +2,6 @@
   "name": "github-helper",
   "description": "A browser extension to do things on github.com",
   "version": "2.0.0",
-  "private": true,
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
@@ -22,6 +21,7 @@
     "copy-webpack-plugin": "^6.0.2",
     "crx": "^5.0.1",
     "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-github": "^4.0.1",
     "remove-files-webpack-plugin": "^1.4.2",
     "webpack": "^4.43.0",
