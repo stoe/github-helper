@@ -16,5 +16,5 @@ const observer = new MutationObserver(function (mutations, me) {
 
 observer.observe(document, {
   childList: true,
-  subtree: true,
+  subtree: true
 })
