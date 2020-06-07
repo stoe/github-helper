@@ -2,11 +2,13 @@ on:
   push:
     paths:
       - 'src/*.js'
+      - '.github/workflows/codeql.yml'
     tags-ignore:
       - 'v*'
   pull_request:
     paths:
       - 'src/*.js'
+      - '.github/workflows/codeql.yml'
   schedule:
     - cron: '0 1 * * 1'
 
