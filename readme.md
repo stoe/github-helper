@@ -1,8 +1,42 @@
 # github-helper
 
-[![ci](https://github.com/stoe/github-helper/workflows/ci/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Aci) [![release](https://github.com/stoe/github-helper/workflows/release/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Arelease) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![ci](https://github.com/stoe/github-helper/workflows/ci/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Aci) [![codeql](https://github.com/stoe/github-helper/workflows/codeql/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Acodeql) [![release](https://github.com/stoe/github-helper/workflows/release/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Arelease) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > A browser extension to do things on github.com
+
+## Functionality
+
+### Repository status
+
+**active**
+<br /><img src="dist/icons/status/active.png" width="16px" />
+if a commit was made in the last two weeks.
+
+**inactive**
+<br /><img src="dist/icons/status/inactive.png" width="16px" />
+if the last commit was made between two and 8 weeks ago.
+
+**unmaintained**
+<br /><img src="dist/icons/status/unmaintained.png" width="16px" />
+if the last commit was made more than 8 weeks ago.
+
+**abandoned**
+<br /><img src="dist/icons/status/abandoned.png" width="16px" />
+if the last commit was made more than a year ago.
+
+### Highlight @-mentions
+
+**direct mention**
+![direct mention highlighted](.github/assets/direct-mention.png)
+
+**team mention**
+![team mention highlighted](.github/assets/team-mention.png)
+
+You'll need a [person access token](https://github.com/settings/tokens/new?description=github-helper-browser-extension&scopes=read:org) with the `read:org` scope added to the extenstion's options for this to work.
+
+No data is saved or transmitted outside of the browser extension.
+
+For more information please see the [privacy](./.github/privacy.md) information.
 
 ## Install
 
