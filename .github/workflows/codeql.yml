@@ -16,6 +16,7 @@ name: codeql
 
 jobs:
   codeql:
+
     runs-on: ubuntu-latest
 
     steps:
