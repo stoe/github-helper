@@ -33,7 +33,7 @@ if the last commit was made more than a year ago.
 <br />
 <img src=".github/assets/team-mention.png" height="96px" alt="screenshot of team mention highlighted" />
 
-You'll need a [person access token](https://github.com/settings/tokens/new?description=github-helper-browser-extension&scopes=read:org) with the `read:org` scope added to the extenstion's options for this to work.
+You will need a [personal access token](https://github.com/settings/tokens/new?description=github-helper-browser-extension&scopes=read:org) with the `read:org` scope added to the extenstion's options for this to work.
 
 No data is saved or transmitted outside of the browser extension.
 
