@@ -9,19 +9,19 @@
 ### Repository status
 
 **active**
-<br /><img src="dist/icons/status/active.png" width="16px" />
+<br /><img src="src/icons/status/active.png" width="16px" />
 if a commit was made in the last two weeks.
 
 **inactive**
-<br /><img src="dist/icons/status/inactive.png" width="16px" />
+<br /><img src="src/icons/status/inactive.png" width="16px" />
 if the last commit was made between two and 8 weeks ago.
 
 **unmaintained**
-<br /><img src="dist/icons/status/unmaintained.png" width="16px" />
+<br /><img src="src/icons/status/unmaintained.png" width="16px" />
 if the last commit was made more than 8 weeks ago.
 
 **abandoned**
-<br /><img src="dist/icons/status/abandoned.png" width="16px" />
+<br /><img src="src/icons/status/abandoned.png" width="16px" />
 if the last commit was made more than a year ago.
 
 ### Highlight @-mentions
