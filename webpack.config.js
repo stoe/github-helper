@@ -57,6 +57,7 @@ module.exports = {
       patterns: [
         {from: './src/manifest.json'},
         {from: './license'},
+        {from: './.github/privacy.md', to: 'privacy.md'},
         {
           from: './src/icons',
           to: 'icons/',
