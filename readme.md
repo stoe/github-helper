@@ -9,28 +9,29 @@
 ### Repository status
 
 **active**
-<br /><img src="src/icons/status/active.png" width="16px" />
+<br /><img src="src/icons/status/active.png" width="16px" alt="active repository status badge" />
 if a commit was made in the last two weeks.
 
 **inactive**
-<br /><img src="src/icons/status/inactive.png" width="16px" />
+<br /><img src="src/icons/status/inactive.png" width="16px" alt="inactive repository status badge" />
 if the last commit was made between two and 8 weeks ago.
 
 **unmaintained**
-<br /><img src="src/icons/status/unmaintained.png" width="16px" />
+<br /><img src="src/icons/status/unmaintained.png" width="16px" alt="unmaintained repository status badge" />
 if the last commit was made more than 8 weeks ago.
 
 **abandoned**
-<br /><img src="src/icons/status/abandoned.png" width="16px" />
+<br /><img src="src/icons/status/abandoned.png" width="16px" alt="abandoned repository status badge" />
 if the last commit was made more than a year ago.
 
 ### Highlight @-mentions
 
 **direct mention**
-![direct mention highlighted](.github/assets/direct-mention.png)
+<br /><img src=".github/assets/direct-mention.png" height="96px" alt="screenshot of direct mention highlighted" />
 
 **team mention**
-![team mention highlighted](.github/assets/team-mention.png)
+<br />
+<img src=".github/assets/team-mention.png" height="96px" alt="screenshot of team mention highlighted" />
 
 You'll need a [person access token](https://github.com/settings/tokens/new?description=github-helper-browser-extension&scopes=read:org) with the `read:org` scope added to the extenstion's options for this to work.
 
