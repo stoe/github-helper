@@ -1,6 +1,10 @@
 on:
   push:
+    paths:
+      - 'src/*.js'
   pull_request:
+    paths:
+      - 'src/*.js'
   schedule:
     - cron: '0 1 * * 1'
 
