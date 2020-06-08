@@ -27,7 +27,7 @@
     "eslint-plugin-github": "^4.0.1",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
-    "remove-files-webpack-plugin": "^1.4.2",
+    "remove-files-webpack-plugin": "^1.4.3",
     "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
     "webpack": "^4.43.0",
