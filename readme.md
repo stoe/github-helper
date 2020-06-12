@@ -41,6 +41,10 @@ For more information please see the [privacy](./.github/privacy.md) information.
 
 ## Install
 
+- Microsoft Edge (Chromium): https://microsoftedge.microsoft.com/addons/detail/badjjokkijlgeoleihpfakbhgieefpjg
+
+or
+
 - Download the latest `github-helper.zip` file from [Release](https://github.com/stoe/github-helper/releases)
 - Unzip the `github-helper.zip` file to your disk
 - Microsoft Edge (Chromium)
