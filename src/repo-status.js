@@ -1,12 +1,21 @@
 ;(() => {
   // Finds the latest commit on the repo page.
-  const LATEST_COMMIT_SELECTOR = '.commit-tease span[itemprop=dateModified] > relative-time'
-  const LATEST_COMMIT_SELECTOR_NEW = '.commit-tease .lh-default > relative-time'
+  const selectors = [
+    '.commit-tease span[itemprop=dateModified] > relative-time',
+    '.commit-tease .lh-default > relative-time',
+    '.repository-content .Details > div relative-time'
+  ]
 
   // Uses a MutationObserver to ensure we respond
   // to dynamically loaded content in the DOM
   const observer = new MutationObserver((mutations, me) => {
-    const el = document.querySelector(LATEST_COMMIT_SELECTOR) || document.querySelector(LATEST_COMMIT_SELECTOR_NEW)
+    let el
+
+    for (const s of selectors) {
+      const e = document.querySelector(s)
+
+      el = e ? e : null
+    }
 
     if (el) {
       const datetime = el.getAttribute('datetime')
