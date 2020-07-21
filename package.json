@@ -1,7 +1,7 @@
 {
   "name": "github-helper",
   "description": "A browser extension to do things on github.com",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
@@ -15,24 +15,27 @@
     "test": "eslint ."
   },
   "dependencies": {
-    "@octokit/request": "^5.4.5"
+    "@octokit/request": "^5.4.6"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
-    "archiver": "^4.0.1",
+    "archiver": "^4.0.2",
     "copy-webpack-plugin": "^6.0.3",
     "crx": "^5.0.1",
-    "eslint": "^7.4.0",
+    "eslint": "^7.5.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-github": "^4.0.1",
+    "eslint-plugin-github": "^4.1.1",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "remove-files-webpack-plugin": "^1.4.3",
-    "sass": "^1.26.9",
-    "sass-loader": "^9.0.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-shell-plugin": "^0.5.0"
+  },
+  "resolutions": {
+    "lodash": ">=4.17.19"
   },
   "prettier": "@github/prettier-config"
 }
