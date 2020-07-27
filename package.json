@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
-    "archiver": "^4.0.2",
+    "archiver": "^5.0.0",
     "copy-webpack-plugin": "^6.0.3",
     "crx": "^5.0.1",
     "eslint": "^7.5.0",
@@ -30,7 +30,7 @@
     "remove-files-webpack-plugin": "^1.4.3",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12",
     "webpack-shell-plugin": "^0.5.0"
   },
