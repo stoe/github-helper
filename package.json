@@ -20,7 +20,7 @@
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
     "archiver": "^5.0.0",
-    "copy-webpack-plugin": "^6.0.3",
+    "copy-webpack-plugin": "^6.0.4",
     "crx": "^5.0.1",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
