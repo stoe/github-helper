@@ -1,34 +1,3 @@
-# github-helper
-
-[![ci](https://github.com/stoe/github-helper/workflows/ci/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Aci) [![codeql](https://github.com/stoe/github-helper/workflows/codeql/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Acodeql) [![release](https://github.com/stoe/github-helper/workflows/release/badge.svg)](https://github.com/stoe/github-helper/actions?query=workflow%3Arelease) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-
-> A browser extension to do things on github.com
-
-## Functionality
-
-### Repository status
-
-**active**
-<br /><img src="src/icons/status/active.png" width="16px" alt="active repository status badge" />
-if a commit was made in the last two weeks.
-
-**inactive**
-<br /><img src="src/icons/status/inactive.png" width="16px" alt="inactive repository status badge" />
-if the last commit was made between two and 8 weeks ago.
-
-**unmaintained**
-<br /><img src="src/icons/status/unmaintained.png" width="16px" alt="unmaintained repository status badge" />
-if the last commit was made more than 8 weeks ago.
-
-**abandoned**
-<br /><img src="src/icons/status/abandoned.png" width="16px" alt="abandoned repository status badge" />
-if the last commit was made more than a year ago.
-
-### Highlight @-mentions
-
-**direct mention**
-<br /><img src=".github/assets/direct-mention.png" height="96px" alt="screenshot of direct mention highlighted" />
-
 **team mention**
 <br />
 <img src=".github/assets/team-mention.png" height="96px" alt="screenshot of team mention highlighted" />
