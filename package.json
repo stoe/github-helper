@@ -1,7 +1,7 @@
 {
   "name": "github-helper",
   "description": "A browser extension to do things on github.com",
-  "version": "2.0.8",
+  "version": "2.1.0-beta",
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
