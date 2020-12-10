@@ -1,25 +1,50 @@
-$yellow: #ffd33d;
-
 a.highlight {
   font-weight: bold;
-  background: $yellow;
+  background: var(--color-auto-yellow-7);
+}
+
+html[data-color-mode='light'] a.highlight {
+  color: var(--color-text-primary) !important;
+}
+
+html[data-color-mode='dark'] a.highlight {
+  color: var(--color-bg-primary) !important;
+}
+
+html[data-color-mode='auto'] a.highlight {
+  @media (prefers-color-scheme: light) {
+    color: var(--color-text-primary) !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-bg-primary) !important;
+  }
 }
 
 .timeline-comment:not(.current-user) .user-mention.highlight,
-.timeline-comment:not(.current-user) .team-mention.highlight,
-.timeline-entry .member-mention.highlight,
-.timeline-entry .team-mention.highlight,
 .markdown-body .user-mention.highlight,
 .markdown-body .user-mention.highlight {
-  background: $yellow !important;
+  background: var(--color-auto-yellow-7) !important;
+}
+
+.timeline-comment:not(.current-user) .team-mention.highlight,
+.timeline-entry .member-mention.highlight,
+.timeline-entry .team-mention.highlight {
+  background: var(--color-auto-purple-7) !important;
+}
+
+html[data-color-mode='light'] .timeline-comment:not(.current-user) .team-mention.highlight,
+html[data-color-mode='light'] .timeline-entry .member-mention.highlight,
+html[data-color-mode='light'] .timeline-entry .team-mention.highlight {
+  color: var(--color-bg-primary) !important;
 }
 
 .timeline-comment.highlight:not(.current-user),
 .timeline-entry.highlight {
-  border-color: $yellow !important;
+  border-color: var(--color-auto-yellow-7) !important;
 }
 
 .timeline-comment.highlight:not(.current-user):before,
 .timeline-entry.highlight .comment-header:before {
-  border-right-color: $yellow !important;
+  border-right-color: var(--color-auto-yellow-7) !important;
 }
