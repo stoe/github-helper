@@ -12,5 +12,13 @@
     "chrome": "readonly",
     "document": "readonly",
     "MutationObserver": "writable"
+  },
+  "rules": {
+    "camelcase": [
+      "error",
+      {
+        "allow": ["per_page"]
+      }
+    ]
   }
 }

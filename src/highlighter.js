@@ -69,7 +69,8 @@ class GitHubHighlighter {
     const {data} = await request('GET /user/teams', {
       headers: {
         authorization: `token ${this.options['token']}`
-      }
+      },
+      per_page: 100
     })
 
     this.options['teams'] = data.map(team => {
