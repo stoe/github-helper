@@ -15,7 +15,7 @@
     "test": "eslint ."
   },
   "dependencies": {
-    "@octokit/request": "^5.4.12"
+    "@octokit/request": "^5.4.13"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
