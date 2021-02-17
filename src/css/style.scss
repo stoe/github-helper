@@ -1,6 +1,6 @@
 a.highlight {
-  font-weight: bold;
-  background: var(--color-auto-yellow-7);
+  font-weight: 600;
+  background-color: var(--color-bg-warning-inverse);
 }
 
 html[data-color-mode='light'] a.highlight {
@@ -24,13 +24,14 @@ html[data-color-mode='auto'] a.highlight {
 .timeline-comment:not(.current-user) .user-mention.highlight,
 .markdown-body .user-mention.highlight,
 .markdown-body .user-mention.highlight {
-  background: var(--color-auto-yellow-7) !important;
+  background-color: var(--color-bg-warning-inverse) !important;
 }
 
+.markdown-body .team-mention.highlight,
 .timeline-comment:not(.current-user) .team-mention.highlight,
 .timeline-entry .member-mention.highlight,
 .timeline-entry .team-mention.highlight {
-  background: var(--color-auto-purple-7) !important;
+  background-color: var(--color-bg-info-inverse) !important;
 }
 
 html[data-color-mode='light'] .timeline-comment:not(.current-user) .team-mention.highlight,
@@ -41,10 +42,10 @@ html[data-color-mode='light'] .timeline-entry .team-mention.highlight {
 
 .timeline-comment.highlight:not(.current-user),
 .timeline-entry.highlight {
-  border-color: var(--color-auto-yellow-7) !important;
+  border-color: var(--color-bg-warning-inverse) !important;
 }
 
 .timeline-comment.highlight:not(.current-user):before,
 .timeline-entry.highlight .comment-header:before {
-  border-right-color: var(--color-auto-yellow-7) !important;
+  border-right-color: var(--color-bg-warning-inverse) !important;
 }
