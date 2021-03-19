@@ -1,51 +1,32 @@
-a.highlight {
-  font-weight: 600;
-  background-color: var(--color-bg-warning-inverse);
-}
-
-html[data-color-mode='light'] a.highlight {
-  color: var(--color-text-primary) !important;
-}
-
-html[data-color-mode='dark'] a.highlight {
-  color: var(--color-bg-primary) !important;
-}
-
-html[data-color-mode='auto'] a.highlight {
-  @media (prefers-color-scheme: light) {
-    color: var(--color-text-primary) !important;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    color: var(--color-bg-primary) !important;
-  }
-}
-
-.timeline-comment:not(.current-user) .user-mention.highlight,
-.markdown-body .user-mention.highlight,
-.markdown-body .user-mention.highlight {
-  background-color: var(--color-bg-warning-inverse) !important;
-}
-
 .markdown-body .team-mention.highlight,
 .timeline-comment:not(.current-user) .team-mention.highlight,
 .timeline-entry .member-mention.highlight,
 .timeline-entry .team-mention.highlight {
-  background-color: var(--color-bg-info-inverse) !important;
-}
-
-html[data-color-mode='light'] .timeline-comment:not(.current-user) .team-mention.highlight,
-html[data-color-mode='light'] .timeline-entry .member-mention.highlight,
-html[data-color-mode='light'] .timeline-entry .team-mention.highlight {
-  color: var(--color-bg-primary) !important;
+    background-color: var(--color-bg-info-inverse) !important;
+    border-radius: 2px;
+    // margin-left: -2px;
+    // margin-right: -2px;
+    padding: 0 2px;
 }
 
 .timeline-comment.highlight:not(.current-user),
 .timeline-entry.highlight {
-  border-color: var(--color-bg-warning-inverse) !important;
+  border-color: var(--color-highlight-text) !important;
 }
 
 .timeline-comment.highlight:not(.current-user):before,
 .timeline-entry.highlight .comment-header:before {
-  border-right-color: var(--color-bg-warning-inverse) !important;
+  border-right-color: var(--color-highlight-text) !important;
+}
+
+html[data-color-mode='light'] {
+  .timeline-comment.highlight:not(.current-user),
+  .timeline-entry.highlight {
+    border-color: var(--color-bg-warning-inverse) !important;
+  }
+
+  .timeline-comment.highlight:not(.current-user):before,
+  .timeline-entry.highlight .comment-header:before {
+    border-right-color: var(--color-bg-warning-inverse) !important;
+  }
 }
