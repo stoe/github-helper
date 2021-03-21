@@ -7,7 +7,7 @@
     "email": "stoe@github.com",
     "url": "https://github.com/stoe"
   },
-  "repository": "stoe/github-helper",
+  "repository": "github:stoe/github-helper",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js",
