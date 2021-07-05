@@ -1,14 +1,19 @@
 {
-  "name": "github-helper",
-  "description": "A browser extension to do things on github.com",
+  "name": "@stoe/github-helper",
   "version": "2.2.0",
+  "description": "A browser extension to do things on github.com",
+  "keywords": [],
   "author": {
     "name": "Stefan Stölzle",
     "email": "stoe@github.com",
     "url": "https://github.com/stoe"
   },
-  "repository": "github:stoe/github-helper",
   "license": "MIT",
+  "repository": "github:stoe/github-helper",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=7"
+  },
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "pretest": "npx eslint-config-prettier .eslintrc.json",
@@ -33,9 +38,6 @@
     "webpack": "^4.44.2, <5",
     "webpack-cli": "^4.7.2",
     "webpack-shell-plugin": "^0.5.0"
-  },
-  "resolutions": {
-    "lodash": ">=4.17.19"
   },
   "prettier": "@github/prettier-config"
 }
