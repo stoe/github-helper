@@ -1,13 +1,5 @@
 .timeline-comment:not(.current-user) {
   &.gh-helper-highlight {
-    border-color: var(--color-bg-info-inverse) !important;
-  }
-
-  a.user-mention.gh-helper-highlight,
-  a.team-mention.gh-helper-highlight,
-  a.member-mention.gh-helper-highlight {
-    background-color: var(--color-bg-info-inverse) !important;
-    border-radius: 2px;
-    padding: 0 2px;
+    border-color: var(--color-user-mention-fg) !important;
   }
 }

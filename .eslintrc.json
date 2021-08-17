@@ -6,8 +6,12 @@
     "es6": true,
     "node": true
   },
-  "plugins": ["github"],
-  "extends": ["plugin:github/recommended"],
+  "plugins": [
+    "github"
+  ],
+  "extends": [
+    "plugin:github/recommended"
+  ],
   "globals": {
     "chrome": "readonly",
     "document": "readonly",
@@ -17,8 +21,11 @@
     "camelcase": [
       "error",
       {
-        "allow": ["per_page"]
+        "allow": [
+          "per_page"
+        ]
       }
-    ]
+    ],
+    "import/no-commonjs": "off"
   }
 }

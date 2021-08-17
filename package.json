@@ -1,6 +1,6 @@
 {
   "name": "@stoe/github-helper",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A browser extension to do things on github.com",
   "keywords": [],
   "author": {
@@ -15,7 +15,7 @@
     "npm": ">=7"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.cjs",
     "pretest": "npx eslint-config-prettier .eslintrc.json",
     "test": "eslint ."
   },
