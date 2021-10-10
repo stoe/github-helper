@@ -1,32 +1,5 @@
-.markdown-body .team-mention.highlight,
-.timeline-comment:not(.current-user) .team-mention.highlight,
-.timeline-entry .member-mention.highlight,
-.timeline-entry .team-mention.highlight {
-    background-color: var(--color-bg-info-inverse) !important;
-    border-radius: 2px;
-    // margin-left: -2px;
-    // margin-right: -2px;
-    padding: 0 2px;
-}
-
-.timeline-comment.highlight:not(.current-user),
-.timeline-entry.highlight {
-  border-color: var(--color-highlight-text) !important;
-}
-
-.timeline-comment.highlight:not(.current-user):before,
-.timeline-entry.highlight .comment-header:before {
-  border-right-color: var(--color-highlight-text) !important;
-}
-
-html[data-color-mode='light'] {
-  .timeline-comment.highlight:not(.current-user),
-  .timeline-entry.highlight {
-    border-color: var(--color-bg-warning-inverse) !important;
-  }
-
-  .timeline-comment.highlight:not(.current-user):before,
-  .timeline-entry.highlight .comment-header:before {
-    border-right-color: var(--color-bg-warning-inverse) !important;
+.timeline-comment:not(.current-user) {
+  &.gh-helper-highlight {
+    border-color: var(--color-user-mention-fg) !important;
   }
 }

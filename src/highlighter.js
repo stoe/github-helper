@@ -46,8 +46,8 @@ class GitHubHighlighter {
   highlight() {
     for (const m of this.mentions()) {
       try {
-        m.classList.add('highlight')
-        m.closest('.timeline-comment, .timeline-entry').classList.add('highlight')
+        m.classList.add('gh-helper-highlight')
+        m.closest('.timeline-comment').classList.add('gh-helper-highlight')
       } catch (err) {
         // eslint-disable-next-line no-console
         console.warn(err)

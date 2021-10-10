@@ -19,6 +19,7 @@
       () => {
         const status = document.getElementById('status')
 
+        // eslint-disable-next-line i18n-text/no-en
         status.textContent = 'Options saved.'
 
         return setTimeout(() => {
