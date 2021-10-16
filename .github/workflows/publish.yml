@@ -1,4 +1,4 @@
-name: publish
+name: Publish
 
 on:
   push:
@@ -7,25 +7,10 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: read
-      packages: write
-
-    steps:
-      - uses: actions/checkout@v2.3.5
-
-      - uses: actions/setup-node@v2.4.1
-        with:
-          node-version: 14.x
-          registry-url: 'https://npm.pkg.github.com'
-          scope: '@stoe'
-
-      # Publish to GitHub Packages
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    uses: stoe/policies/.github/workflows/policy-node-publish.yml@main
+    with:
+      npm: false
+      gh: true
 
   release:
     runs-on: ubuntu-latest
