@@ -1,7 +1,0 @@
-#!/bin/bash
-
-[[ -d ./build ]] && rm -rf build/
-[[ ! -d ./build ]] && mkdir build/
-
-crx pack dist --crx-version number 2 -p key.pem --zip-output build/github-helper.zip
-# crx pack dist --crx-version number 2 -p key.pem -o build/github-helper.crx

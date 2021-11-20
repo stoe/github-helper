@@ -3,7 +3,7 @@ const path = require('path')
 const webpack = require('webpack')
 const cp = require('copy-webpack-plugin')
 const rm = require('remove-files-webpack-plugin')
-const sh = require('webpack-shell-plugin')
+const sh = require('webpack-shell-plugin-next')
 
 module.exports = {
   mode: 'production',
@@ -68,7 +68,14 @@ module.exports = {
       ]
     }),
     new sh({
-      onBuildEnd: ['script/build']
+      onBuildEnd: {
+        scripts: [
+          'mkdir build/',
+          './node_modules/.bin/crx3 -p key.pem -z ./build/github-helper.zip -o ./build/github-helper.crx ./dist/'
+        ],
+        blocking: false,
+        parallel: true
+      }
     })
   ]
 }
