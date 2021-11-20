@@ -24,20 +24,26 @@ if the last commit was made more than 8 weeks ago.
 <br /><img src="src/icons/status/abandoned.png" width="16px" alt="abandoned repository status badge" />
 if the last commit was made more than a year ago.
 
-### Highlight @-mentions
+### Highlight @mentions
+
+<details><summary>deprecated, @mentions are now supported baseline by GitHub</summary>
+<p>
 
 **direct mention**
-<br /><img src=".github/assets/direct-mention.png" height="96px" alt="screenshot of direct mention highlighted" />
+<br><img src=".github/assets/direct-mention.png" height="96px" alt="screenshot of direct mention highlighted">
 
 **team mention**
-<br />
-<img src=".github/assets/team-mention.png" height="96px" alt="screenshot of team mention highlighted" />
+<br>
+<img src=".github/assets/team-mention.png" height="96px" alt="screenshot of team mention highlighted">
 
 You will need a [personal access token](https://github.com/settings/tokens/new?description=github-helper-browser-extension&scopes=read:org) with the `read:org` scope added to the extenstion's options for this to work.
 
 No data is saved or transmitted outside of the browser extension.
 
 For more information please see the [privacy](./.github/privacy.md) information.
+
+</p>
+</details>
 
 ## Install
 
