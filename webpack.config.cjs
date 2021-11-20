@@ -1,6 +1,5 @@
 const path = require('path')
 
-const webpack = require('webpack')
 const cp = require('copy-webpack-plugin')
 const rm = require('remove-files-webpack-plugin')
 const sh = require('webpack-shell-plugin-next')
@@ -47,7 +46,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.ProgressPlugin(),
     new rm({
       before: {
         include: ['./build', './dist']
