@@ -33,7 +33,7 @@
     "file-loader": "^6.2.0",
     "html-loader": "^3.0.1",
     "remove-files-webpack-plugin": "^1.4.5",
-    "sass": "^1.44.0",
+    "sass": "^1.45.0",
     "sass-loader": "^12.4.0",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
