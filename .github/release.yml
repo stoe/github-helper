@@ -2,8 +2,7 @@ changelog:
   exclude: {}
   categories:
     - title: 'Changes 📦'
-      labels:
-        - '*'
+      labels: []
     - title: 'Dependency Updates 🆙'
       labels:
         - 'dependency :robot:'
