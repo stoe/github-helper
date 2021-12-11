@@ -7,4 +7,6 @@ changelog:
     - title: 'Dependency Updates 🆙'
       labels:
         - 'dependency :robot:'
+        - 'dependency 🤖'
         - 'github-action :robot:'
+        - 'github-action 🤖'
