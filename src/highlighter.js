@@ -7,7 +7,7 @@ class GitHubHighlighter {
         token: '',
         login: '',
         teams: [],
-        lastChecked: 0
+        lastChecked: 0,
       },
       async items => {
         this.options = items
@@ -23,7 +23,7 @@ class GitHubHighlighter {
         } else {
           return this.highlight()
         }
-      }
+      },
     )
   }
 
@@ -57,20 +57,20 @@ class GitHubHighlighter {
 
   async update() {
     const {
-      data: {login}
+      data: {login},
     } = await request('GET /user', {
       headers: {
-        authorization: `token ${this.options['token']}`
-      }
+        authorization: `token ${this.options['token']}`,
+      },
     })
 
     this.options['login'] = login.toLowerCase()
 
     const {data} = await request('GET /user/teams', {
       headers: {
-        authorization: `token ${this.options['token']}`
+        authorization: `token ${this.options['token']}`,
       },
-      per_page: 100
+      per_page: 100,
     })
 
     this.options['teams'] = data.map(team => {

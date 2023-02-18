@@ -16,7 +16,7 @@
     ACTIVE: 'ACTIVE',
     INACTIVE: 'INACTIVE',
     UNMAINTAINED: 'UNMAINTAINED',
-    ABANDONED: 'ABANDONED'
+    ABANDONED: 'ABANDONED',
   }
 
   const ICONS = {
@@ -24,7 +24,7 @@
     ACTIVE: 'icons/status/active.png',
     INACTIVE: 'icons/status/inactive.png',
     UNMAINTAINED: 'icons/status/unmaintained.png',
-    ABANDONED: 'icons/status/abandoned.png'
+    ABANDONED: 'icons/status/abandoned.png',
   }
 
   /*
@@ -73,13 +73,13 @@
       tabId: tab.id,
       path: {
         16: ICONS[status],
-        32: ICONS[status]
-      }
+        32: ICONS[status],
+      },
     })
 
     chrome.pageAction.setTitle({
       tabId: tab.id,
-      title: `${ACTION_TITLE}: ${status}`
+      title: `${ACTION_TITLE}: ${status}`,
     })
 
     chrome.pageAction.show(tab.id)

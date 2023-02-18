@@ -3,7 +3,7 @@
   const selectors = [
     '.commit-tease span[itemprop=dateModified] > relative-time',
     '.commit-tease .lh-default > relative-time',
-    '.repository-content .Details > div relative-time'
+    '.repository-content .Details > div relative-time',
   ]
 
   // Uses a MutationObserver to ensure we respond
@@ -29,6 +29,6 @@
 
   observer.observe(document, {
     childList: true,
-    subtree: true
+    subtree: true,
   })
 })()

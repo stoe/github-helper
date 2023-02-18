@@ -2,11 +2,11 @@
   const restoreOptions = () => {
     return chrome.storage.sync.get(
       {
-        token: ''
+        token: '',
       },
       items => {
         return (document.getElementById('token').value = items.token)
-      }
+      },
     )
   }
 
@@ -14,7 +14,7 @@
     return chrome.storage.sync.set(
       {
         token: document.getElementById('token').value,
-        lastChecked: 0
+        lastChecked: 0,
       },
       () => {
         const status = document.getElementById('status')
@@ -25,7 +25,7 @@
         return setTimeout(() => {
           return (status.textContent = '')
         }, 750)
-      }
+      },
     )
   }
 
