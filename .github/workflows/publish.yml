@@ -7,7 +7,7 @@ on:
 
 env:
   CI: true
-          
+
 permissions:
   contents: read
   packages: write
@@ -46,6 +46,7 @@ jobs:
           files: build/github-helper.zip
           draft: false
           prerelease: ${{ contains(github.ref, 'alpha') || contains(github.ref, 'beta') }}
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
